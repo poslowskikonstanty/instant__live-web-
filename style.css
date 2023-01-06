@@ -2,6 +2,21 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background-color: #181818;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -78,6 +93,7 @@ body.open .navbar-overlay {
 .navbar-tittle {
     margin: 0;
     font-size: 16px;
+    color: whitesmoke;
 }
 
 .navbar-menu {
@@ -136,17 +152,8 @@ a:hover {
     transition: 0.5s;
 }
 
-body {
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-    background-color: #181818;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
 header {
-    background-color: #121212;
+    background-color: rgba(18, 18, 18, 0.5);
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
@@ -350,3 +357,42 @@ p {
             transform: translate(-49%, -53%);
         }
     }
+
+#bg {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    
+    
+}
+
+.container, .footer {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.headeri {
+	position: relative;
+	min-height: calc(100vh - 70px);
+	padding: 250px 0;
+	/*background: url('zdjfilm.png') center/cover no-repeat;*/
+	color: #fff;
+	text-shadow: 0 0 30px #000000;
+	text-align: center;
+    /*background-color: #181818;*/
+    overflow: hidden;
+}
+
+.headeri .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+	min-height: 100%;
+    z-index: -1;
+}
